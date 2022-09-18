@@ -1,0 +1,16 @@
+RTO about a single AZ outage: multi-AZ configuration is configured, failover with another AZ will automatically run. It spent less time
+
+RTO about a single region outage
+
+0h:0m - Problem happens (0 minutes)
+0h:4m - less time passes before an alert triggers (4 minutes)
+0h:6m - Alert triggers to on-all staff (2 minute)
+0h:15m - On-call staff wil go to computer connec to VPN (9 minutes)
+0h:26m - On-call staff begin analysis issue (11 minutes)
+0h:40 - Problem is taken (14 minutes)
+00:46 - Solve problem (6 minutes) 
+00:56 - Completed (10 minutes) Total time: 56 minutes
+
+RPO about a single AZ outage: multi-AZ configuration is configured, failover with another AZ will automatically run. It spent less time
+
+PO about a single region outage  RDS database is configured with automatically backups ,  RPO is going to be based on  data is backed up frequenlty.

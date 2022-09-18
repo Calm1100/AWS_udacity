@@ -1,0 +1,34 @@
+mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| udacity                |
++--------------------+
+4 rows in set (0.00 sec)
+mysql> USE udacity
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> SHOW TABLES;
++----------------+
+| Tables_in_pets |
++----------------+
+| cats           |
++----------------+
+1 row in set (0.00 sec)
+mysql> DESCRIBE cats;
++-------+------------------+------+-----+---------+----------------+
+| Field | Type             | Null | Key | Default | Extra          |
++-------+------------------+------+-----+---------+----------------+
+| id    | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(150)     | NO   |     | NULL    |                |
+| owner | varchar(150)     | NO   |     | NULL    |                |
+| birth | date             | NO   |     | NULL    |                |
++-------+------------------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
+mysql> INSERT INTO cats ( name, owner, birth) VALUES ( 'Sandy', 'Lennon', '2015-01-03' );
+ERROR 1290 (HY000): The MySQL server is running with the --read-only option so it cannot execute this statement
